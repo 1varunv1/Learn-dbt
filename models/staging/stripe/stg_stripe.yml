@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: stg_payments
+    description: staged data for payments
+    columns:
+      - name: payment_id
+        description: primary key for staged table for payments
+        tests:
+          - unique
+          - not_null
+          
+              
